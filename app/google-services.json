@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "552326892136",
+    "project_id": "chat-app-demo-61f5c",
+    "storage_bucket": "chat-app-demo-61f5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552326892136:android:2c9a6d22a794eaf800c9dd",
+        "android_client_info": {
+          "package_name": "com.ugur.mychatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552326892136-dvuoq9cljjstrllqc0la687khdnnflih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMfOSNw1bxhpmCG_IkhO8b-Nxut6K_fao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552326892136-dvuoq9cljjstrllqc0la687khdnnflih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

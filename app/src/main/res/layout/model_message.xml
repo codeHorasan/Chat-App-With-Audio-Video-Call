@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp"
+    android:id="@+id/constraint_layout_message">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_message_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginEnd="340dp"
+        app:cardBackgroundColor="#03A9F4"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/text_view_message_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_below="@id/file_image_view_message_right"/>
+
+            <ImageView
+                android:id="@+id/file_image_view_message_right"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_file"
+                android:visibility="gone"
+                android:layout_below="@id/file_image_view_message_right"/>
+
+            <ImageView
+                android:id="@+id/image_message_right"
+                android:layout_width="160dp"
+                android:layout_height="170dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_message_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#8FD53E"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/text_view_message_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_below="@id/file_image_view_message_left"/>
+
+            <ImageView
+                android:id="@+id/file_image_view_message_left"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_file"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/image_message_left"
+                android:layout_width="160dp"
+                android:layout_height="170dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

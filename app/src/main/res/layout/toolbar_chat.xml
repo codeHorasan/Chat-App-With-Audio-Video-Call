@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue_700"
+    android:theme="@style/Theme.MyChatApp.NoActionBar"
+    android:id="@+id/chat_toolbar"
+    app:popupTheme="@style/Theme.MyChatApp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:onClick="goBack"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chat_toolbar_image"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        app:civ_border_width="2dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:civ_border_color="#FFFFFF"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/chat_toolbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:ems="15"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/chat_toolbar_audio_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_audio_call"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/chat_toolbar_video_call"/>
+
+        <ImageView
+            android:id="@+id/chat_toolbar_video_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_video_call"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+
+
+</androidx.appcompat.widget.Toolbar>
